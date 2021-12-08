@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('planets');
+});
+
+Route::get('/game1', function () {
+    return view('game1');
+});
+
+Route::get('/results', function () {
+    return view('results');
+});
+
+Route::get('/progress', function () {
+    return view('progress');
+});
+
+Route::get('/redirect1', function () {
+    return redirect('/game1');
 });

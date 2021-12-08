@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Jura', sans-serif;
+}
+
+body .container-sm{
+	background: url(../img/bigbackground.svg) no-repeat left top;
+	background-size: 100%;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+
+header .left {
+	background: url(../img/leftmenu.svg) no-repeat left top;
+	height: 53px;
+	width: 243px;
+	padding-top: 0.75rem;
+	padding-left: 2rem;
+}
+
+header span {
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1rem;
+}
+
+header .nickname {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+header .lvl {
+	font-weight: 300;
+	font-size: .65rem;
+}
+
+header .progress {
+	height: 4px;
+	width: 120px;
+	border-radius: 0;
+	background-color: #555;
+}
+
+header .lvl-bar{
+	background-color: #30BF00;
+}
+
+header .right {
+	background: url(../img/rightmenu.svg) no-repeat left top;
+	height: 53px;
+	width: 75px;
+	padding-left: 43px;
+	padding-top: 13px;
+	margin-left: auto;
+}
+
+header .right a {
+	display: inline-block;
+	background: url(../img/logout.svg) no-repeat center center;
+	height: 26px;
+	width: 20px;
+}
+
+.planets {
+	padding: 80px 70px;
+	background: url(../img/planetline.svg) no-repeat center 105px;
+	background-size: 36%;
+	width: 100%;
+}
+
+.planets a {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 55px;
+	width: 73px;
+}
+
+.planet {
+	display: block;
+	width: 100%;
+	height: 73px;
+	background-size: 100% !important;
+}
+
+.planet-2,
+.planet-4 {
+	align-self: flex-end;
+}
+
+.planet-1 .planet {
+	background: url(../img/orangeplanet.png) no-repeat center center;
+}
+
+.planet-2 .planet {
+	background: url(../img/greenplanet.png) no-repeat center center;
+}
+
+.planet-3 .planet {
+	background: url(../img/blueplanet.png) no-repeat center center;
+}
+
+.planet-4 .planet {
+	background: url(../img/unknownplanet.png) no-repeat center center;
+}
+
+.stars {
+	display: flex;
+	height: 14px;
+	margin-top: 8px;
+	justify-content: center;
+}
+
+.stars .star {
+	background: url(../img/starblack.svg) no-repeat center center;
+	display: block;
+	width: 14px;
+	height: 100%;
+	background-size: 100% !important;
+	margin: 0 3px;
+}
+
+.stars .star.getted {
+	background: url(../img/staryellow.svg) no-repeat center center;
+}
