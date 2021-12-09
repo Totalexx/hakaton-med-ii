@@ -43,7 +43,8 @@
                 sessionStorage.setItem('progress', parseInt(sessionStorage.getItem('progress')) + countTrueWords * 10);
                 sessionStorage.setItem('lvl', parseInt(sessionStorage.getItem('lvl'))+1);
                 document.location.href = "/progress";
-                delete  timeinterval;
+                clearInterval(timeinterval);
+                return;
             }
             document.getElementById('time').textContent = time;
         }

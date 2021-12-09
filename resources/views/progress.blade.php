@@ -76,7 +76,11 @@
                         left: ['125px', '190px'],
                         easing: 'easeInOutQuad',
                         delay: 3000,
-                        endDelay: 500
+                        endDelay: 500,
+                        complete: function () {
+                            sessionStorage.setItem('done', 'true');
+                            document.location.href = "/results";
+                        }
                     });
                     break;
                 case '2':
