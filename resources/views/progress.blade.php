@@ -78,8 +78,7 @@
                         delay: 3000,
                         endDelay: 500,
                         complete: function () {
-                            sessionStorage.setItem('done', 'true');
-                            document.location.href = "/results";
+                            document.location.href = "/game1";
                         }
                     });
                     break;
@@ -91,7 +90,11 @@
                         left: ['190px', '230px'],
                         easing: 'easeInOutQuad',
                         delay: 3000,
-                        endDelay: 500
+                        endDelay: 500,
+                        complete: function () {
+                            sessionStorage.setItem('done', 'true');
+                            document.location.href = "/results";
+                        }
                     });
                     break;
             }

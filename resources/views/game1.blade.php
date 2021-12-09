@@ -18,7 +18,7 @@
         </header>
         <section class="game d-flex flex-column align-items-center">
             <div class="task text-center">
-				<span>
+				<span id="task">
 					Произнесите слово
 				</span>
                 <h2 id="task-word">Шиншилла</h2>
@@ -29,9 +29,17 @@
 
     <script src="{{asset('js/anime.min.js')}}"></script>
     <script>
-        words = ['рама', 'роща', 'рой', 'ракушки', 'рота', 'роза', 'укус', 'фикус',
-            'шелуха', 'ноша', 'лошадка', 'смешать', 'ниша', 'мишень', 'пешеход',
-            'крыша', 'решать', 'огурец', 'птенец', 'дворец', 'столица', 'солнце'];
+        let words;
+        if (sessionStorage.getItem('lvl') == 0) {
+            document.getElementById('task').textContent='Произнесите слог';
+            words = ['мы', 'но', 'да', 'до', 'за', 'ты', 'вы', 'он'];
+        } else {
+            document.getElementById('task').textContent='Произнесите слово';
+            words = ['рама', 'роща', 'рой', 'ракушки', 'рота', 'роза', 'укус', 'фикус',
+                'шелуха', 'ноша', 'лошадка', 'смешать', 'ниша', 'мишень', 'пешеход',
+                'крыша', 'решать', 'огурец', 'птенец', 'дворец', 'столица', 'солнце'];
+        }
+        sessionStorage.setItem('progressLast', parseInt(sessionStorage.getItem('progress')));
         countTrueWords = 0;
         let numWord = Math.floor(Math.random() * words.length);
         document.getElementById('task-word').textContent = words[numWord];
