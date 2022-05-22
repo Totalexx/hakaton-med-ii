@@ -1,0 +1,88 @@
+@import url('../Jura-VariableFont_wght.ttf');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Jura', sans-serif;
+}
+
+body .container-sm{
+	background: url(../img/background.svg) no-repeat left top;
+	background-size: 100%;
+}
+
+.game {
+	height: 100vh;
+	width: 100%;
+}
+
+h2 {
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 100px;
+	margin-top: 70px;
+}
+
+.lvl-board {
+	width: 278px;
+	height: 189px;
+	background: url(../img/gamefield.png) no-repeat center center;
+	background-size: 100%;
+	margin-bottom: 50px;
+}
+
+#player {
+	display: inline-block;
+	position: absolute;
+	width: 42px;
+	height: 76px;
+	background: url(../img/astronautA_SE.png) no-repeat center center;
+	background-size: 70%;
+}
+
+.pos1 {
+    top: 275px;
+    left: 125px;
+}
+
+.pos2 {
+	top: 20px;
+	right: 30px;
+}
+
+.pos3 {
+	top: 55px;
+	right: -30px;
+}
+
+
+.star-progress {
+	width: 60%;
+}
+
+.progress {
+	height: 8px;
+	width: 100%;
+	border-radius: 0;
+	background-color: #555;
+}
+
+.lvl-bar{
+	background-color: #30BF00;
+}
+
+
+.stars .star {
+	background: url(../img/starblack.svg) no-repeat center center;
+	display: inline-flex;
+	width: 16px;
+	height: 16px;
+	background-size: 100% !important;
+	margin-top: 3px;
+}
+
+.stars .star.getted {
+	background: url(../img/staryellow.svg) no-repeat center center;
+}

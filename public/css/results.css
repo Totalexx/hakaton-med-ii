@@ -1,0 +1,44 @@
+@import url('../Jura-VariableFont_wght.ttf');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Jura', sans-serif;
+}
+
+body .container-sm{
+	background: url(../img/background.svg) no-repeat left top;
+	background-size: 100%;
+}
+
+.game {
+	height: 100vh;
+}
+
+.task {
+	width: 317px;
+	height: 195px;
+	background: url(../img/bigmenublock.svg) no-repeat center center;
+	color: #fff;
+	padding: 20px 20px;
+}
+
+.task span {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.task h2 {
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+a.btn {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 3px 24px;
+	background-color: #4887B7;
+	color: #fff;
+}
